@@ -1,0 +1,46 @@
+# Core Data Science
+numpy
+pandas
+scipy
+
+# Machine Learning
+scikit-learn
+xgboost
+lightgbm
+
+# PDF Extraction
+pdfplumber
+tabula-py
+PyPDF2
+
+# Explainability
+shap
+
+# Model Tracking
+mlflow
+
+# Drift Detection
+evidently
+
+# API & Deployment
+fastapi
+uvicorn
+
+# Visualization
+streamlit
+plotly
+matplotlib
+seaborn
+
+# Caching
+redis
+
+# Utilities
+python-dotenv
+pyyaml
+tqdm
+joblib
+
+# Testing
+pytest
+pytest-cov
