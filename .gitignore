@@ -1,0 +1,171 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environments
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+.venv/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+.python-version
+
+# pipenv
+Pipfile.lock
+
+# poetry
+poetry.lock
+
+# Data files
+data/raw/*
+data/processed/*
+data/interim/*
+data/external/*
+*.csv
+*.xlsx
+*.xls
+*.json
+*.parquet
+*.feather
+*.h5
+*.hdf5
+*.pkl
+*.pickle
+
+# Keep data directory structure but ignore contents
+!data/.gitkeep
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# ML Models and Artifacts
+models/
+*.h5
+*.hdf5
+*.pb
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.onnx
+*.tflite
+mlruns/
+runs/
+checkpoints/
+saved_models/
+
+# Logs and monitoring
+logs/
+*.log
+wandb/
+.tensorboard/
+lightning_logs/
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+*.env
+
+# IDE - VSCode
+.vscode/
+*.code-workspace
+.history/
+
+# IDE - PyCharm
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# IDE - Jupyter
+.jupyter/
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+*~
+
+# Testing
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+coverage.xml
+*.cover
+.hypothesis/
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# pytype static type analyzer
+.pytype/
+
+# Cython debug symbols
+cython_debug/
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+# Documentation builds
+docs/_build/
+site/
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Secrets and credentials
+secrets/
+credentials/
+*.pem
+*.key
+*.crt
