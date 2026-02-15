@@ -1,6 +1,6 @@
+from utils.config import DATA_PATH, CLEANED_DATA_PATH
 from services import ml_pipeline_service
-from utils.config import SALES_DATA_PATH, STORE_DATA_PATH
 
 
 def get_ml_pipeline():
-    return ml_pipeline_service.MLPipeline(SALES_DATA_PATH, STORE_DATA_PATH)
+    return ml_pipeline_service.MLPipeline(DATA_PATH, CLEANED_DATA_PATH)

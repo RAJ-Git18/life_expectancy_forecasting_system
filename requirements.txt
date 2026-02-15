@@ -2,6 +2,7 @@
 numpy
 pandas
 scipy
+torch
 
 # Machine Learning
 scikit-learn
