@@ -41,7 +41,7 @@ class DataPreprocessing:
                     fill_value = self.df[col].mean()
                     strategy = "mean"
 
-                self.df[col].fillna(fill_value, inplace=True)
+                self.df.fillna({col: fill_value}, inplace=True)
                 logger.info(
                     f"Imputed column '{col}' (skew: {skew_value:.2f}) with {strategy}: {fill_value:.2f}"
                 )

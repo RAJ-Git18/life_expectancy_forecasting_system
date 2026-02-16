@@ -22,7 +22,7 @@ class DataLoader:
         if not os.path.exists(self.cleaned_data_path):
             raise FileNotFoundError(f"Data not found at: {self.cleaned_data_path}")
         self.df = pd.read_csv(self.cleaned_data_path)
-        logger.info(f"Data is loaded. Shape: {self.data.shape}")
+        logger.info(f"Data is loaded. Shape: {self.df.shape}")
 
     def split_dataset(self):
         self.load_data()

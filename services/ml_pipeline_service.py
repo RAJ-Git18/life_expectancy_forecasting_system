@@ -12,7 +12,7 @@ class MLPipeline:
             self.data_path, self.cleaned_data_path
         )
         self.data_loader = DataLoader(self.cleaned_data_path)
-        self.train = Train()
+        self.model_trainer = Train()
 
     def run_preprocessing(self):
         logger.info("Starting Preprocessing Phase...")
@@ -37,7 +37,7 @@ class MLPipeline:
     def train(self):
         logger.info("Starting Training Phase...")
         try:
-            self.train.train_and_evaluate(
+            self.model_trainer.train_and_evaluate(
                 self.X_train, self.X_test, self.y_train, self.y_test
             )
             logger.info("Training Phase Completed Successfully.")
