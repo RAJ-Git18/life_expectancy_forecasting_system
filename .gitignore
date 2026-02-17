@@ -139,3 +139,13 @@ credentials/
 *.pem
 *.key
 *.crt
+
+
+# Data files
+data/*.csv
+data/*.pdf
+*.pdf
+*.csv
+
+# ML Models and Artifacts
+models/*.pkl
