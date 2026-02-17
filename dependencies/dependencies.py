@@ -23,5 +23,6 @@ def get_pdf_file(file: UploadFile = File(...)):
     return DataExtractionService(file)
 
 
-def get_prediction_service(best_model=Depends(get_best_model)):
-    return PredictionService(best_model)
+def get_prediction_service(request: Request, best_model=Depends(get_best_model)):
+    explainer = request.app.state.explainer
+    return PredictionService(best_model, explainer)
