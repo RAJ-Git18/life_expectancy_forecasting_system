@@ -48,42 +48,12 @@ Pipfile.lock
 # poetry
 poetry.lock
 
-# Data files
-data/raw/*
-data/processed/*
-data/interim/*
-data/external/*
-*.csv
-*.xlsx
-*.xls
-*.json
-*.parquet
-*.feather
-*.h5
-*.hdf5
-*.pkl
-*.pickle
 
 # Keep data directory structure but ignore contents
 !data/.gitkeep
 !data/raw/.gitkeep
 !data/processed/.gitkeep
 
-# ML Models and Artifacts
-models/
-*.h5
-*.hdf5
-*.pb
-*.pt
-*.pth
-*.ckpt
-*.safetensors
-*.onnx
-*.tflite
-mlruns/
-runs/
-checkpoints/
-saved_models/
 
 # Logs and monitoring
 logs/
