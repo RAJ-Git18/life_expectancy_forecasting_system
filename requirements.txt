@@ -45,3 +45,5 @@ joblib
 # Testing
 pytest
 pytest-cov
+
+google-genai
