@@ -95,7 +95,7 @@ life_expectancy_forecasting_system/
 
 1.  **Clone the repository**
     ```bash
-    git clone https://github.com/RAJ-Git18/life_expectancy.git
+    git clone https://github.com/RAJ-Git18/life_expectancy_forecasting_system.git
     cd life_expectancy_forecast
     ```
 
