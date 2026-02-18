@@ -1,0 +1,34 @@
+schema: '2.0'
+stages:
+  ml_pipeline:
+    cmd: python3 run_pipeline.py
+    deps:
+    - path: data/train.csv
+      hash: md5
+      md5: bc5ed223d11e2598b017600718e85339
+      size: 283471
+    - path: pipelines/data_loader.py
+      hash: md5
+      md5: 9b9e47bc7faea1fd70f467556f338c85
+      size: 1186
+    - path: pipelines/data_preprocessing.py
+      hash: md5
+      md5: 272c38a697b2dd02bf5643cc4c1d9453
+      size: 2116
+    - path: pipelines/train.py
+      hash: md5
+      md5: 62207a4f914f0feec9b3d14ce02a5806
+      size: 2028
+    - path: services/ml_pipeline_service.py
+      hash: md5
+      md5: d559a126cf15f482764f143e346ca6fb
+      size: 1929
+    outs:
+    - path: data/cleaned_dataset.csv
+      hash: md5
+      md5: a98f816a8b4afd358b0d59ab5b5e5a83
+      size: 299255
+    - path: models/best_model.pkl
+      hash: md5
+      md5: ef7f123a5edda87c2e17c19c39138f5a
+      size: 19559457

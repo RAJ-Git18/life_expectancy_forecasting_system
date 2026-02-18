@@ -48,3 +48,4 @@ pytest-cov
 
 google-genai
 dvc
+python-multipart

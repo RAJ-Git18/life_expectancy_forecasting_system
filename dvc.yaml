@@ -1,0 +1,12 @@
+stages:
+  ml_pipeline:
+    cmd: python3 run_pipeline.py
+    deps:
+      - data/train.csv
+      - services/ml_pipeline_service.py
+      - pipelines/data_preprocessing.py
+      - pipelines/data_loader.py
+      - pipelines/train.py
+    outs:
+      - data/cleaned_dataset.csv
+      - models/best_model.pkl
